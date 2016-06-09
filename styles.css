@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Elements
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+
+}
+
+section {
+    width: 100%;
+}
+
+button:focus {
+    outline:0;
+    }
+
+.main-container{
+    width: 100%;
+    display: flex;
+}
+.inner-container{
+    width: 83.333333%;
+    float: left;
+    margin:0 auto;
+}
+.flexbox-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
