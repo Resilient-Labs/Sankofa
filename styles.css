@@ -2,6 +2,7 @@
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Elements
+# Section
 
 
 
@@ -43,4 +44,75 @@ button:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/*--------------------------------------------------------------
+# Section
+--------------------------------------------------------------*/
+section{
+    display: flex;  
+    width: 100%;
+    margin: 24px 0;
+    justify-content: center;
+}
+button{
+    font-size: 20px;
+}
+div > h1{
+    font-size: 40px;
+    text-align: center;
+    text-align: left;
+}
+.signup-form{
+    font-size: 20px;
+    width: 37.5%;
+  
+}
+.text-align{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: grey;
+}
+.video-align{
+	padding: 40px 0 40px 0px;
+}
+.signup-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.description-container{
+    width: 66%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+}
+.sankofa-color{
+    background-color: #dad;
+}
+.description-text{
+    width: 48%;
+
+}
+.description-title{
+    width: 100%;
+
+}
+.signup-btn{
+    width: 20%;
+
+}
+.title-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+
+}
+.title{
+    text-align: center;
 }
