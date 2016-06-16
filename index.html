@@ -2,41 +2,68 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<title></title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Slab:700,400' rel='stylesheet' type='text/css'>
+	<title>Sankofa</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
 	<!-- Start of 1st Section-->
-	<section class="sankofa-color">
+	<section class="sankofa-color hero-img">
 		<div class="title-container">
 			<h1 class="title">Sankofa</h1>
-			<p>A Tech company making a diffrence for people of color in mobile</p>
+			<hr>
+			<p class="slogan">A Tech company making a diffrence for people of color in mobile</p>
+			<a href="#video"><div class="arrow-down"></div></a>
 			</div>
 		</div>
 	</section>
 	<!-- End of 1st Section-->
 	<!-- Start of 2nd Section-->
-	<section>
+	<section id="video">
 		<div class="flexbox-center video-align">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowfullscreen></iframe>
+			<iframe width="640" height="400" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
+					allowfullscreen></iframe>
 		</div>
 
 	</section>
 	<!-- End of 2nd Section-->
 	<!-- Start of 3rd Section-->
-	<section class="sankofa-color">
+	<section class="sankofa-color description">
 		<div class="description-container">
-
 			<h1 class="description-title">We are enhancing your mobile experience</h1>
-			<p class="description-text">Lorem ipsum dolor sit amet, fusce quisque, orci a elit. Scelerisque dui vitae. Nec libero vivamus, interdum ultricies, ac sit. Litora fusce enim, vestibulum et.
-			</p>
-			<p class="description-text">Lorem ipsum dolor sit amet, fusce quisque, orci a elit. Scelerisque dui vitae. Nec libero vivamus, interdum ultricies, ac sit. Litora fusce enim, vestibulum et.
-			</p>
+			<p class="description-text">By providing tech products that address the unmet needs, pain points and
+				preferences of people of color</p>
+			<p class="description-text">By involving people who understand the important cultural nuances and ground
+				signals</p>
+			<p class="description-text">By developing a superior understanding of audience needs and desires, and applying better data
+				science and product design</p>
 
-			<input class="signup-form" type = "text" id = "myText" value = "Name" />
-			<input class="signup-form" type = "text" id = "myText" value = "Email" />
-			<button class="signup-btn"> sign up</button>
+			<input class="signup-form" type="text" name="name" placeholder="Name"/>
+			<input class="signup-form" type="text" email="email" placeholder="Email"/>
+			<input class="signup-btn" type="submit" name="Submit" value="Sign Up"/>
 		</div>
 	</section>
 	<!-- End of 3rd Section-->
+
+	<footer>
+		<p>Sankofa C 2016. Built by <a href="http://www.resilientcoders.org">Resilient Coders</a></p>
+	</footer>
+
+	<script>
+		$(function() {
+			$('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
 </body>
 </html>

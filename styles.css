@@ -4,7 +4,9 @@
 # Elements
 # Section
 
-
+Fonts:
+font-family: 'Roboto Slab', serif;
+font-family: 'Roboto', serif;
 
 
 
@@ -17,14 +19,6 @@
 body {
     margin: 0;
     padding: 0;
-}
-
-li {
-
-}
-
-section {
-    width: 100%;
 }
 
 button:focus {
@@ -51,8 +45,12 @@ button:focus {
 section{
     display: flex;  
     width: 100%;
-    margin: 24px 0;
+    margin: 0 0 24px 0;
     justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    min-height: 480px;
 }
 button{
     font-size: 20px;
@@ -64,9 +62,24 @@ div > h1{
 }
 .signup-form{
     font-size: 20px;
-    width: 37.5%;
-  
+    width: 33%;
+    height: 56px;
+    padding: 0 18px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
 }
+
+.signup-btn{
+    width: 20%;
+    height: 56px;
+    padding: 0;
+    border: none;
+    background-color: white;
+    color: #E24319;
+}
+
 .text-align{
 	text-align: center;
 	padding-top: 100px;
@@ -82,37 +95,109 @@ div > h1{
     justify-content: space-between;
     align-items: center;
 }
+
+.description {
+    min-height: 480px;
+}
+
 .description-container{
-    width: 66%;
+    width: 50%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     flex-flow: row wrap;
-
 }
+
 .sankofa-color{
-    background-color: #dad;
+    background-color: #E24319;
 }
+
 .description-text{
-    width: 48%;
+    width: 32%;
+    color: white;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 24px 0;
+    color: white;
 
 }
+
 .description-title{
     width: 100%;
-
+    color: white;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0 0 18px 0;
 }
-.signup-btn{
-    width: 20%;
 
-}
 .title-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding: 30px 0px;
-
+    padding: 0px;
+    height: 50%;
 }
+
 .title{
     text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 96px;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+}
+
+.slogan {
+    font-family: 'Roboto', serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+    margin: 18px 0;
+}
+
+footer {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(51,51,51);
+}
+
+p {
+    margin: 0;
+}
+
+hr {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    border: none;
+    height: 2px;
+}
+
+.hero-img {
+    background: url('sankofa1.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 720px;
+    z-index: 0;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #FFF;
 }
