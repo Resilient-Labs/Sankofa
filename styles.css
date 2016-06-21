@@ -81,7 +81,6 @@ button:focus {
 section{
     display: flex;
     width: 100%;
-    margin: 0 0 24px 0;
     justify-content: center;
     -webkit-justify-content: center;
     align-items: center;
@@ -108,12 +107,12 @@ footer p {
 }
 
 footer p a {
-    color: #E24319;
+    color: #FF9100;
     text-decoration: none;
 }
 
 footer p a:focus {
-    color: #E24319;
+    color: #FF9100;
 }
 
 p {
@@ -145,13 +144,6 @@ hr {
 /*--------------------------------------------------------------
 # Styling
 --------------------------------------------------------------*/
-
-.hero-img {
-    background: url('sankofa1.jpg') no-repeat center;
-    background-size: cover;
-    min-height: 720px;
-    z-index: 0;
-}
 
 .title{
     text-align: center;
@@ -192,17 +184,17 @@ div > h1{
     padding: 0 18px;
     background-color: transparent;
     color: #fff;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .signup-btn{
     width: 20%;
     font-size: 20px;
-    height: 56px;
+    height: 60px;
     padding: 0;
-    border: none;
+    border: 2px solid white;
     background-color: white;
-    color: #E24319;
+    color: #FF9100;
     cursor: pointer;
 }
 
@@ -237,7 +229,7 @@ div > h1{
 }
 
 .sankofa-color{
-    background-color: #E24319;
+    background-color: #FF9100;
 }
 
 .description-text{
@@ -248,7 +240,6 @@ div > h1{
     font-weight: 400;
     margin: 24px 0;
     color: white;
-
 }
 
 .description-title{
@@ -257,7 +248,7 @@ div > h1{
     font-family: 'Roboto Slab', sans-serif;
     font-size: 32px;
     font-weight: normal;
-    margin: 0 0 18px 0;
+    margin: 24px 0;
 }
 
 .title-container{
@@ -269,4 +260,122 @@ div > h1{
     height: 50%;
 }
 
+.fixed-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    align-items: center;
+    -webkit-align-items: center;
+}
 
+.fxd-img {
+    width: 50%;
+}
+
+.dual-img {
+    height: 480px;
+    overflow: hidden;
+}
+
+@media all and (min-width: 961px) and (max-width: 1368px) {
+    .dual-img {
+        min-height: 350px;
+        height: 350px;
+    }
+    .description-container {
+        width: 83.3333333%;
+    }
+}
+
+.dual-img img {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+@media all and (min-width: 120px) and (max-width: 960px) {
+    .dual-img {
+        display: block;
+        height: auto;
+        margin: 0;
+    }
+    .dual-img img {
+        height: auto;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .description-container {
+        width: 90%;
+    }
+
+    .description-text {
+        width: 100%;
+    }
+
+    .signup-form {
+        width: 100%;
+        margin: 18px auto;
+    }
+
+    .signup-btn {
+        width: 50%;
+        margin: 18px auto;
+    }
+}
+.bg-container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 360px;
+    overflow: hidden;
+}
+
+.icon {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    margin: 24px 0;
+}
+
+.icon img {
+    width: 33%;
+}
+
+.italicized {
+    font-style: italic;
+}
+
+.centered {
+    text-align: center;
+}
+
+.margined {
+    padding: 80px 0;
+}
+
+.learnmore {
+    width: 100%;
+}
+
+.trademark {
+    font-size: 14px;
+    margin:0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+}
