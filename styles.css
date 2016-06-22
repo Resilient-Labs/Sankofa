@@ -85,7 +85,7 @@ section{
     -webkit-justify-content: center;
     align-items: center;
     -webkit-align-items: center;
-    min-height: 480px;
+  /*  min-height: 480px; */
 }
 button{
     font-size: 20px;
@@ -177,11 +177,27 @@ div > h1{
     text-align: center;
     text-align: left;
 }
-.signup-form{
-    width: 33%;
+
+
+.mc-field-group {
+  width: 33%;
+  display:inline-block;
     font-size: 20px;
     height: 56px;
-    padding: 0 18px;
+    background-color: transparent;
+    color: #fff;
+    /*border: 2px solid white; */
+}
+
+#mc_embed_signup {
+  width:100%;
+}
+
+.signup-form{
+    width: 90%;
+    font-size: 20px;
+    height: 56px;
+    padding: 0 0 0 18px;
     background-color: transparent;
     color: #fff;
     border: 2px solid white;
@@ -256,7 +272,7 @@ div > h1{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding: 0px;
+    padding: 0 0 50px 0;
     height: 50%;
 }
 
@@ -274,25 +290,32 @@ div > h1{
 }
 
 .dual-img {
-    height: 480px;
+  /*  height: 480px; */
     overflow: hidden;
-}
-
-@media all and (min-width: 961px) and (max-width: 1368px) {
-    .dual-img {
-        min-height: 350px;
-        height: 350px;
-    }
-    .description-container {
-        width: 83.3333333%;
-    }
 }
 
 .dual-img img {
     height: auto;
-    width: 100%;
     overflow: hidden;
 }
+
+@media (min-width: 961px) {
+    .dual-img {
+        /*
+        min-height: 350px;
+        height: 350px;
+        */
+    }
+    .dual-img img {
+      width:50%;
+    }
+    .description-container {
+        width: 83.3333333%;
+    }
+
+}
+
+
 @media all and (min-width: 120px) and (max-width: 960px) {
     .dual-img {
         display: block;
@@ -301,6 +324,7 @@ div > h1{
     }
     .dual-img img {
         height: auto;
+        width: 100%;
     }
 
     .icon {
@@ -316,13 +340,19 @@ div > h1{
     }
 
     .signup-form {
-        width: 100%;
-        margin: 18px auto;
-    }
+        width: 90%;
+        padding: 0 18px;
+}
 
     .signup-btn {
         width: 50%;
         margin: 18px auto;
+    }
+
+    .mc-field-group {
+      width: 100%;
+      display:block;
+      margin: 12px 0;
     }
 }
 .bg-container {
